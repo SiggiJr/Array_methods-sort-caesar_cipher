@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="getraenke_output"></div>
+    <section class="caesar_cipher">
+      <form>
+        <input type="radio" name="encrypt_decrypt" id="encrypt" checked />
+        <label for="encrypt">Text verschlüsseln</label>
+        <input type="radio" name="encrypt_decrypt" id="decrypt" />
+        <label for="decrypt">Text entschlüsseln</label>
+        <div>
+          <div><label for="text">Zu verschlüsselnder Text:</label></div>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="key">Schlüssel</label>
+          <input type="number" name="key" id="key" />
+        </div>
+        <button type="submit">Text verschlüsseln</button>
+      </form>
+      <div class="output_container"></div>
+    </section>
+  </body>
+</html>
