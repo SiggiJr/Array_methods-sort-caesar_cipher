@@ -314,14 +314,14 @@ const caeser = (event) => {
   }
 };
 
-encryptBtn.addEventListener("change", () => {
+decryptBtn.addEventListener("change", () => {
   document.querySelector("label[for='text']").textContent = "Zu entschlüsselnder Text:";
-  document.querySelector("button[type='submit']").textContent = "Entschlüsseln";
+  document.querySelector("button[type='submit']").textContent = "Text entschlüsseln";
 });
 
-decryptBtn.addEventListener("change", () => {
+encryptBtn.addEventListener("change", () => {
   document.querySelector("label[for='text']").textContent = "Zu verschlüsselnder Text:";
-  document.querySelector("button[type='submit']").textContent = "Verschlüsseln";
+  document.querySelector("button[type='submit']").textContent = "Text verschlüsseln";
 });
 
 caesarForm.addEventListener("submit", caeser);
